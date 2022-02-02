@@ -8,6 +8,8 @@ body {
 	max-width: 960px;
 	padding-left: 2.275%;
 	padding-right: 2.275%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 }
 /* Header */
 header {
@@ -24,55 +26,40 @@ header .profilePhoto {
 }
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	color: #545454;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 24px;
+	/* color: #545454; */
+	/* font-size: 30px;
+	font-weight: 2000;
+	line-height: 24px; */
 }
 h2 {
-	font-family: sans-serif;
-	color: #545454;
-	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	/* color: #545454; */
+	/* font-size: 16px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 24px; */
 }
 hr {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
 }
 p {
-	font-family: sans-serif;
-	color: #545454;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
 	font-size: 17px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 1.8;
 	overflow-y: auto;
 }
-#aboutmeparagraph{
-	text-indent: 3em;
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid black;
 }
 a{color: #484f5f}
 a:visited {
 	color: #2851EA
 }
 a:hover {
-	font-style: italic;
 	color: #727D94;
-}
-.circle {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: 75px;
-  text-align: center;
-  background: #49545e;
-	display:inline-block;
-	opacity: 1.0;
-}
-.circle:hover {
-	opacity:0.5;
 }
 
 #container {
@@ -80,11 +67,7 @@ a:hover {
     margin: 0px auto;
     text-align: center;
 }
-header .socialNetworkNavBar .socialNetworkNav {
-	border-radius: 50%;
-	cursor: pointer;
-}
-header .socialNetworkNavBar .socialNetworkNav img:hover {
+header img:hover {
 	opacity: 0.5;
 }
 footer {
@@ -98,6 +81,7 @@ footer a{color: #506B83}
 header {
 	width: 100%;
 	float: none;
+	text-align: left;
 }
 header .profileLogo .logoPlaceholder {
 	display: inline-block;
@@ -111,19 +95,6 @@ header .profileHeader {
 }
 header .profileHeader p {
 	text-align: justify;
-}
-header .socialNetworkNavBar {
-	text-align: center;
-	display: block;
-	margin-top: 60px;
-	clear: both;
-	margin-bottom: 15%;
-}
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-	margin-right: 23px;
 }
 
 }
@@ -149,12 +120,6 @@ header .profileHeader {
 	text-align: left;
 	margin-top: 7%;
 }
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 74px;
-	height: 74px;
-	display: inline-block;
-	margin-right: 23px;
-}
 }
 
 /* Desktops and laptops  */
@@ -172,11 +137,5 @@ header .profilePhoto {
 header .profileHeader {
 	text-align: left;
 	padding-top: 10%;
-}
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 74px;
-	height: 74px;
-	display: inline-block;
-	margin-right: 23px;
 }
 }
