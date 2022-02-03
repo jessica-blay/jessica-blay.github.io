@@ -1,77 +1,167 @@
 <html>
 
 <head>
-    <link href="css/page.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </head>
 
-<body>
-    <header>
-        <div class="profilePhoto">
-            <!-- Profile photo -->
-            <a href="https://www.linkedin.com/in/jessica-moreira-blay/" target="_blank"><img
-                    src="resources/MePicture.jpeg" alt="Photo of me!" class="profilePhoto"></a>
-        </div>
-        <section class="profileHeader">
+<body style="font-family: 'Montserrat', sans-serif;">
 
-        <h1>Jessica Blay</h1>
-        <a href="mailto:jessica.blay11@gmail.com">Email me!</a><br />
-        <a href="https://www.linkedin.com/in/jessica-moreira-blay/">Add me on LinkedIn!</a>
-        </section>
-    </header>
-    <div class="about">
-        <h2>about me</h2>
+    <!-- navigation bar -->
+    <div class="w3-top w3-bar w3-black">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#casestudies" class="w3-bar-item w3-button">Case Studies</a>
+        <a href="#papers" class="w3-bar-item w3-button">Papers</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+
+
+    <div id="home" class="w3-container w3-padding-64">
+        <!-- Profile photo -->
+        <div class="w3-cell-row w3-center" style="width: 50%; margin:auto;">
+            <div class="w3-cell">
+                <img src="resources/MePicture.jpeg" alt="Photo of me!" class="w3-circle">
+            </div>
+            <div class="w3-cell">
+                <h1>Jessica Blay</h1>
+                <a href="mailto:jessica.blay11@gmail.com">Email me!</a><br />
+                <a href="https://www.linkedin.com/in/jessica-moreira-blay/" target="_blank">Add me on
+                    LinkedIn!</a>
+            </div>
+        </div>
+    </div>
+    <!-- about me -->
+    <div id="about" class="w3-container" style="width: 70%; margin:auto;">
+        <h2>About Me</h2>
         <p>I am a UX researcher, passionate about accessibility and usability. Having <a
-                href="https://cla.csulb.edu/departments/psychology/ms-human-factors-alumni/">completed</a> my M.S. in <a
-                href="https://cla.csulb.edu/departments/psychology/graduate-programs/master-of-science-option-in-human-factors/">Psychology,
-                Option in Human Factors at CSU Long Beach</a> in summer 2021, I am looking to continue learning through
-            life and use my skills obtained in academia to further help a diverse set of users use products efficiently.
-            <br />My current interests include having a great sing along with friends and family. I also enjoy cooking
-            and tasting new types of dishes along with the occasional wine tasting. I love to travel and meet new people
+                href="https://cla.csulb.edu/departments/psychology/ms-human-factors-alumni/"
+                target="_blank">completed</a> my M.S. in <a
+                href="https://cla.csulb.edu/departments/psychology/graduate-programs/master-of-science-option-in-human-factors/"
+                target="_blank">Psychology,
+                Option in Human Factors at CSU Long Beach</a> in summer 2021, I am looking to continue learning
+            through
+            life and use my skills obtained in academia to further help a diverse set of users use products
+            efficiently.
+            <br />My current interests include having a great sing along with friends and family. I also enjoy
+            cooking
+            and tasting new types of dishes along with the occasional wine tasting. I love to travel and meet new
+            people
             along the way.
         </p>
     </div>
-    <div class="case-studies">
-        <h1>Case Studies</h1>
-        <a href="case-study-chatbot.html">Chatbot usability evaluation</a><br />
-        <a href="case-study-focus-group.html">Dashboard Focus group</a><br />
-        <!-- <a href="case-study-gooru-course.html">Gooru guidelines. Link to course?<br /></a> -->
+    <div id="resume" class="w3-container" style="width: 70%; margin:auto;">
+        <h2>Resume</h2>
+        <a href="resources/Jessica_M_Blay_Resume_2022.pdf" target="_blank"><img src="resources/icons/resume-icon.svg"
+                height=50 width=50 /></a>
     </div>
-    <div class="thesis">
-        <h1>Thesis &amp; research papers</h1>
-        <a href="resources/CSULB_thesis.pdf">How Does Age of Acquisition and Fluency Affect the Bilingual Advantage?</a>
-    </div>
-
-    <!-- <div class="toolbox">
+    <div id="toolbox" class="w3-container" style="width: 70%; margin:auto;">
         <h1>research process and toolbox</h1>
         <ul>
             <li>Journey Maps</li>
-            <li>interviews</li>
-            <li>focus groups</li>
-            <li>usability testing</li>
+            <li>Concept Testing</li>
+            <li>Interviews</li>
+            <li>Focus Groups</li>
+            <li>Usability Testing</li>
+            <li>Literature Review</li>
             <li>concept testing??</li>
-            <li>persona creation??</li>
+            <li>Persona Creation</li>
             <li>??</li>
         </ul>
-    </div> -->
+    </div>
+    <div id="casestudies" class="w3-content w3-display-container" style="width: 70%; margin:auto;">
+        <!-- <h1>Case Studies</h1> -->
+        <div class="w3-display-container caseStudySlides">
+            <img class="w3-margin-right" src="resources/icons/chatbot.jpg" style="width: 100%;" />
+            <div class="w3-display-middle w3-container w3-padding-16 w3-grey w3-hover-opacity">
+                <a href="case-studies/chatbot.html">Chatbot usability evaluation</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container caseStudySlides">
+            <img class="w3-margin-right" src="resources/icons/charts.png" style="width: 100%;" />
+            <div class="w3-display-middle w3-container w3-padding-16 w3-grey w3-hover-opacity">
+                <a href="case-studies/focus-group.html">Dashboard Focus group</a><br>
+            </div>
+        </div>
+
+        <div class="w3-display-container caseStudySlides">
+            <img class="w3-margin-right" src="resources/icons/guidelines.jpg" style="width: 100%;" />
+            <div class="w3-display-middle w3-container w3-padding-16 w3-grey w3-hover-opacity">
+                <a href="case-studies/gooru-course.html">Gooru guidelines</a><br>
+            </div>
+        </div>
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <div class="w3-center w3-display-bottommiddle" style="width:100%">
+            <span class="w3-badge dots w3-border" style="height: 15px; width: 15px;" onclick="currentDiv(1)"></span>
+            <span class="w3-badge dots w3-border" style="height: 15px; width: 15px;" onclick="currentDiv(2)"></span>
+            <span class="w3-badge dots w3-border" style="height: 15px; width: 15px;" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
 
 
-    <!-- <div class="classwork">
-        <h1>additional (class/miscellaneous) work</h1>
-        <ul>
-            <li>
-                <p>water bottle design course</p>
-            </li>
-            <li>
-                <p>design course journey maps</p>
-            </li>
-            <li>
-                <p>music app - prototypes/wireframes</p>
-            </li>
-        </ul>
-    </div> -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("caseStudySlides");
+            var dots = document.getElementsByClassName("dots");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
+    <div id="papers" class="w3-container" style="width: 70%; margin:auto;">
+        <h1>Thesis &amp; research papers</h1>
+        <a href="resources/CSULB_thesis.pdf" target="_blank">How Does Age of Acquisition and Fluency Affect the
+            Bilingual Advantage?</a><br>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-74614-8_98" target="_blank">A Synthesis of
+            Subjective Scales Which Assess Worker Fatigue: Building a Simple, Reliable, and Effective Evaluative
+            Instrument</a>
+    </div>
+
+
+
+    <div id="classwork" class="w3-container" style="width: 70%; margin:auto;">
+        <h1>Additional Work</h1>
+        <a href="classes/waterBottle.html">Water Bottle Design Course</a><br>
+        <a href="classes/journeyMaps.html">Design Course Journey Maps</a><br>
+        <a href="classes/musicApp.html">Music App Prototypes/Wireframes</a><br>
+    </div>
+
+    <footer id="contact" class="w3-container w3-padding-32 w3-center w3-light-grey">
+
+        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a class="fa fa-envelope w3-hover-opacity" href="mailto:jessica.blay11@gmail.com"></a>
+            <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/jessica-moreira-blay/"
+                target="_blank"></a>
+
+    </footer>
 </body>
 
 </html>
